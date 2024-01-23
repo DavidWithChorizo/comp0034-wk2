@@ -6,5 +6,5 @@ app = Flask(__name__)
 
 @app.route('/')
 @app.route("/<name>")
-def hello(name=None):
+def hello(name="Lechuan"):
     return f"Hello, {escape(name)}!"
