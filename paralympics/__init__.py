@@ -46,6 +46,8 @@ def create_app(test_config=None):
         with app.app_context():
             db.create_all()
         # Register the routes with the app in the context
+            # Add the data to the database if not already added
+            add_data_from_csv()
             from paralympics import controllers
 
         return app
