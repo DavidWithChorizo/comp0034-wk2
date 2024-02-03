@@ -115,7 +115,7 @@ adding extra 'features' to it as needed.
    paralympics package and the paralympics module within that package.
 
 6. Check that you can run the app `flask --app paralympics run --debug`. Flask recognises the `create_app()` function.
-
+'flask --app prediction run --debug'
 ## Initialise the SQLAlchemy extension
 
 Return to `__init__.py` and add the following code to _before_ the `create_app()` function to initialise the SQLAlchemy
